@@ -16,10 +16,12 @@ CREATE TABLE t_userinfo (
   id int(15)  ,
   nickname varchar(30) ,
   sex varchar(5) ,
-  age int ,
-  phone varchar(15),
+  birthday date,
+  email varchar(25),
   declaration varchar(200),
-  imgurl varchar(50),
+  home varchar(30) ,
+  user_img varchar(50),
+  background varchar(50),
   CONSTRAINT fk_id
   FOREIGN KEY(id) REFERENCES t_user(id)
 ) DEFAULT CHARSET=UTF8;
