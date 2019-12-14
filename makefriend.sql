@@ -8,7 +8,7 @@ create database makeFriend
 CREATE TABLE t_user (
   id int(15)  AUTO_INCREMENT,
   username varchar(30) NOT NULL UNIQUE,
-  upassword varchar(30) NOT NULL ,
+  password varchar(30) NOT NULL ,
   PRIMARY KEY (id)
 ) DEFAULT CHARSET=UTF8;
 
