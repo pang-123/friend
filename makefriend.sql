@@ -5,6 +5,15 @@ SHOW COLUMNS FROM product_
 
 create database makeFriend
 
+CREATE TABLE t_Weibo(
+ wid int(15) AUTO_INCREMENT,
+ id int(15),
+ content varchar(255) NOT NULL,
+ w_img varchar(255),
+ PRIMARY KEY (wid),
+ FOREIGN KEY(id) REFERENCES t_user(id)
+)DEFAULT CHARSET=UTF8;
+
 CREATE TABLE t_user (
   id int(15)  AUTO_INCREMENT,
   username varchar(30) NOT NULL UNIQUE,
